@@ -45,7 +45,7 @@ make
     3.接下来，使用以下命令将更改提交到本地仓库：
     git commit -m "提交信息"
     4.最后，使用以下命令将更改推送到远程仓库：
-    git push origin master
+    git push origin master(git pull ...)
     这将把你的本地更改推送到名为"origin"的远程仓库的"master"分支上。
     现在，你的更改已经被更新到远程仓库了。
 }

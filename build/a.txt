@@ -1,0 +1,19 @@
+//注册
+{"msgid":3,"name":"li si","password":"666666"}
+id=24 li si
+id=23 zhang san
+//登录
+{"msgid":1,"id":23,"password":"123456"}
+{"msgid":1,"id":24,"password":"666666"}
+//单聊消息
+{"msgid":5,"id":23,"from":"zhang san","to":24,"msg":"hello!"}
+
+update user set state='offline' where id=23;
+
+//添加好友
+{"msgid":6,"id":23,"friendid":24}
+
+"select a.id,a.name,a.state b.grouprole from user a \
+        inner join groupuser b on b.userid=a.id where b.groupid=%d"
+"select a.id,a.name,a.state,b.grouprole from user a \
+    inner join groupuser b on b.userid = a.id where b.groupid=%d"

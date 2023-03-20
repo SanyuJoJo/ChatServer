@@ -9,6 +9,7 @@ make
 3. git
 4. git commit -m "第一次提交项目所有代码"
 {
+
     配置账户
     git config --global user.name "SanyuJoJo"
     git config --global user.email "1600589524@qq.com"
@@ -25,17 +26,21 @@ make
     ~/.ssh$ vim id_rsa.pub
     查看状态
     ssh git@github.com
+    
 }
 5. git push origin master
 
 //修改https协议为ssh
 {
+
     1. git remote set-url origin git@github.com:username/repo.git
     2. git fetch
+    
 }
 
 //文件更新
 {
+
     如果你的文件有更改，想要更新到远程仓库，可以按照以下步骤操作：
     1.首先，使用以下命令查看你的本地Git仓库的状态：
     git status
@@ -48,6 +53,7 @@ make
     git push origin master(先拉取（git pull ...）后push)
     这将把你的本地更改推送到名为"origin"的远程仓库的"master"分支上。
     现在，你的更改已经被更新到远程仓库了。
+    
 }
 //更新到其他分支
 {
@@ -88,12 +94,16 @@ make
 
 }
 //git 走代理和取消代理
+
 {
+
     1.开启代理
     git config --global http.proxy http://127.0.0.1:41091
     git config --global https.proxy http://127.0.0.1:41091
     2. 关闭代理
     git config --global --unset http.proxy
     git config --global --unset https.proxy
+    
 }
+
 */

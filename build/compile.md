@@ -87,4 +87,13 @@ make
     这样就完成了创建新分支并将本地更改推送到远程分支的操作。
 
 }
+//git 走代理和取消代理
+{
+    1.开启代理
+    git config --global http.proxy http://127.0.0.1:41091
+    git config --global https.proxy http://127.0.0.1:41091
+    2. 关闭代理
+    git config --global --unset http.proxy
+    git config --global --unset https.proxy
+}
 */
